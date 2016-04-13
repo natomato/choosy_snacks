@@ -28,7 +28,6 @@ export default class Vote extends React.Component {
   render() {
     return (
       <div className='voting'>
-        <p className='test'></p>
         {this.getPair().map(entry =>
           <button key={entry}
                   onClick={() => this.clickHandler(entry)}

@@ -1,34 +1,28 @@
-# Full Stack Redux Tutorial Redo
+# Choosy Snacks
 
-## WIP --- only about 75% complete
+This web app allows employees of a company to democratically elect the foods they want to eat.
 
-This is an implementation of the terrific tutorial by @teropa
-with a few updates. The tutorial is fantastic, thorough, and follows [common best practices](https://medium.com/javascript-and-opinions/state-of-the-art-javascript-in-2016-ab67fc68eb0b#.u80vh537a), but React is quickly changing. In just 6 months, some of it is no longer recommended by react.
+## Run locally
+To run the app locally there are two different modules to use.
+Clone this repo and navigate to the voting-server folder where you can start the server.
+Then navigate to the voting-client folder where you can start webpack-dev-server that will start on  localhost:8080
+If nothing loads, check the console for any error messages.
 
-This tutorial makes a few small changes as react recommends using class extends to create components instead of React.createClass and shallowRender for testing.
-
-I also added the Enzyme testing library syntax to ease the test writing and take advantage of the newer shallowRender capabilities.
-
-## Run the demo
-Clone this repo and navigate to the voting-server folder where you can start the server. Then navigate to the voting-client directory where you can start webpack-dev-server and then open a browser and navigate to localhost:8080
-If nothing loads, check the console of the webpage and see the error messages.
-
-Here is an example:
+Example of the console output:
 ```sh
-git clone https://github.com/natomato/full_stack_redux.git
-cd ./full_stack_redux/voting-server
+cd ./choosy_snacks/voting-server
 npm install #the server's dependencies
 npm start
 
-# You should see this in your terminal
-# > voting-server@1.0.0 start /Users/xxxx/Programming/tutorials/full_stack_redux/voting-server
+# You should see in your terminal:
+# > voting-server@1.0.0 start .../choosy_snacks/voting-server
 # > babel-node index.js
 
 
-cd ./full_stack_redux/voting-client
+cd ./choosy_snacks/voting-client
 npm install #the client's dependencies
 webpack-dev-server #if installed globally
 
-# You should see this in your terminal
+# You should see in your terminal:
 # > webpack: bundle is now VALID.
 ```
